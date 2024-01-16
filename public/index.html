@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안성시청</title>
+    <script src="https://kit.fontawesome.com/336a72fc40.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic:wght@400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="h_top">
+            <div class="container">
+                <h1><img src="img/logo.png" alt="안성시청"></h1>
+                <div class="ht_right">
+                    <ul class="sns">
+                        <li><a href="#"><img src="img/sns_icon1.png" alt="카카오톡"></a></li>
+                        <li><a href="#"><img src="img/sns_icon2.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/sns_icon3.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/sns_icon4.png" alt="블로그"></a></li>
+                    </ul><!-- //.sns -->
+
+                    <div class="log">
+                        <a href="#">국가상징</a><img src="img/flag_icon.png" alt="">
+                        <a href="#">로그인</a>
+                        <label for="lan">Languages</label>
+                        <select name="lan" id="lan">
+                            <option value="">Korean</option>
+                            <option value="">English</option>
+                            <option value="">Japanese</option>
+                            <option value="">Chinese</option>
+                            <option value="">Translate</option>
+                        </select>
+                    </div><!-- //.log -->
+                </div><!-- //.h_t_right -->
+            </div><!-- //.container -->
+        </div><!-- //.h_top -->
+
+        <div class="h_bottom">
+            <div class="container">
+                <nav>
+                    <div class="nav_bg"></div>
+                    <ul class="gnb">
+                        <li><a href="#">전자민원</a>
+                            <ul class="sub">
+                                <li><a href="#">전자민원창구</a>
+                                
+                                </li>
+                                <li><a href="#">민원안내</a>
+                            
+                                </li>
+                                <li><a href="#">민원서비스</a>
+                                
+                                </li>
+                                <li><a href="#">온라인민원</a>
+                                
+                                </li>
+                                <li><a href="#">민원공개</a>
+                                
+                                </li>
+                                <li><a href="#">신고센터</a>
+                                
+                                </li>
+                                <li><a href="#">분야별 민원</a>
+                                
+                                </li>
+                            </ul><!-- //.sub -->
+                        </li>
+                        <li><a href="#">참여소통</a>
+                            <ul class="sub">
+                                <li><a href="#">열린게시판</a>
+                                
+                                </li>
+                                <li><a href="#">주민참여예산제</a>
+                            
+                                </li>
+                                <li><a href="#">제안제도</a>
+                                
+                                </li>
+                                <li><a href="#">참여마당</a>
+                                
+                                </li>
+                                <li><a href="#">모집공고</a>
+                                
+                                </li>
+                                <li><a href="#">고향사랑기부제</a>
+                                
+                                </li>
+                            </ul><!-- //.sub -->
+                        </li>
+                        <li><a href="#">행정정보</a>
+                            <ul class="sub">
+                                <li><a href="#">행정서비스현장</a>
+                                
+                                </li>
+                                <li><a href="#">시정정보</a>
+                            
+                                </li>
+                                <li><a href="#">재정현황</a>
+                                
+                                </li>
+                                <li><a href="#">재정현황(공기업)</a>
+                                
+                                </li>
+                                <li><a href="#">계약정보</a>
+                                
+                                </li>
+                                <li><a href="#">안성통계</a>
+                                
+                                </li>
+                                <li><a href="#">정보공개</a>
+                                
+                                </li>
+                                <li><a href="#">공공데이터개방</a>
+                                
+                                </li>
+                            </ul><!-- //.sub -->
+                        </li>
+                        <li><a href="#">안성소식</a>
+                            <ul class="sub">
+                                <li><a href="#">시장정보</a>
+                                
+                                </li>
+                                <li><a href="#">시장뉴스</a>
+                            
+                                </li>
+                                <li><a href="#">시정간행물</a>
+                                
+                                </li>
+                                <li><a href="#">지역소식</a>
+                                
+                                </li>
+                            </ul><!-- //.sub -->
+                        </li>
+                        <li><a href="#">안성소개</a>
+                            <ul class="sub">
+                                <li><a href="#">열린시장실</a>
+                                
+                                </li>
+                                <li><a href="#">시청안내</a>
+                            
+                                </li>
+                                <li><a href="#">안성역사</a>
+                                
+                                </li>
+                                <li><a href="#">안성상징</a>
+                                
+                                </li>
+                                <li><a href="#">안성현황</a>
+                                
+                                </li>
+                                <li><a href="#">안성시 홍보영상</a>
+                                
+                                </li>
+                                <li><a href="#">국내외교류</a>
+                                
+                                </li>
+                                <li><a href="#">안성지도</a>
+                                
+                                </li>
+                                <li><a href="#">읍면동 현황</a>
+                                
+                                </li>
+                            </ul><!-- //.sub -->
+                        </li>
+                        <li><a href="#">통합예약</a>
+                            <ul class="sub">
+                                <li><a href="#">교육/강좌(평생교육)</a>
+                                
+                                </li>
+                                <li><a href="#">교육/강좌(유아~청소년)</a>
+                            
+                                </li>
+                                <li><a href="#">체험/놀이(유아~청소년)</a>
+                                
+                                </li>
+                                <li><a href="#">도서관 정기독서 프로그램</a>
+                                
+                                </li>
+                                <li><a href="#">도서관 행사</a>
+                                
+                                </li>
+                                <li><a href="#">박두진문학관 교육</a>
+                                
+                                </li>
+                                <li><a href="#">공연/전시</a>
+                                
+                                </li>
+                                <li><a href="#">관광/관람</a>
+                                
+                                </li>
+                                <li><a href="#">캠핑장/휴양림</a>
+                                
+                                </li>
+                                <li><a href="#">시설대관</a>
+                                
+                                </li>
+                                <li><a href="#">자원봉사</a>
+                                
+                                </li>
+                                <li><a href="#">기타사업</a>
+                                
+                                </li>
+                                <li><a href="#">경기공유서비스</a>
+                                
+                                </li>
+                                <li><a href="#">안성미디어센터</a>
+                                
+                                </li>
+                            </ul><!-- //.sub -->
+                        </li>
+                    </ul><!-- //.gnb -->
+                </nav>
+            </div><!-- //.container -->
+        </div><!-- //.h_bottom -->
+
+    </header>
+
+    <section class="main">
+        <div class="search">
+            <div class="container">
+                <p>통합검색</p>
+                <input type="text" value="찾으시는 정보가 있으신가요?">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div><!-- //.container -->
+        </div><!-- //.search -->
+
+        <div class="main_all container">
+            <div class="main_banner">
+                <ul class="slide">
+                    <li><a href="#"><img src="img/main1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main4.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main6.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main7.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main8.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/main9.jpg" alt=""></a></li>
+                </ul><!-- //.slide -->
+                <div class="btn_all">
+                    <div class="slideNum">
+                        <em>01</em>
+                        <em>02</em>
+                        <em>03</em>
+                        <em>04</em>
+                        <em>05</em>
+                        <em>06</em>
+                        <em>07</em>
+                        <em>08</em>
+                        <em>09</em>
+                    </div><!-- //.slideNum -->
+                        <b>09</b>
+                    <div class="ltrt_btn">
+                        <div class="left_btn"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="right_btn"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                    <div class="pause_play">
+                        <div class="pause_btn"><i class="fa-regular fa-circle-pause"></i></div>
+                        <div class="play_btn"><i class="fa-regular fa-circle-play"></i></div>
+                    </div>
+                </div><!-- //.btn_all -->
+            </div><!-- //.main_banner -->
+
+            <div class="main_banner2">
+                <div class="ltrt">
+                    <div class="left">
+                        <img src="img/Union.png" alt="">
+                        <p>안녕하세요! <br>
+                            안성시장<br>
+                            <b>김보라 </b>입니다.
+                        </p>
+                        <ul>
+                            <li><a href="#">열린 시장실</a></li>
+                            <li><a href="#">시민신문고</a></li>
+                            <li><a href="#">공약사업</a></li>
+                        </ul>
+                    </div><!-- //.left -->
+                    <div class="right">
+                        <img src="img/people.png" alt="김보라시장">
+                    </div><!-- //.right -->
+                </div><!-- //.ltrt -->
+                <div class="main_icons">
+                    <ul>
+                        <li><a href="#"><img src="img/icon1.png" alt=""><span>조직도</span></a></li>
+                        <li><a href="#"><img src="img/icon2.png" alt=""><span>직원검색</span></a></li>
+                        <li><a href="#"><img src="img/icon3.png" alt=""><span>청사안내</span></a></li>
+                        <li><a href="#"><img src="img/icon4.png" alt=""><span>오시는길</span></a></li>
+                    </ul>
+                </div><!-- //.main_icons -->
+            </div><!-- //.main_banner2 -->
+        </div><!-- //.main_all -->
+
+    </section><!-- //.main -->
+
+    <section class="services">
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li class="on"><a href="#">자주찾는 메뉴</a></li>
+                    <li><a href="#">분야별 정보</a></li>
+                    <li><a href="#">평생교육</a></li>
+                    <li><a href="#">부속사이트</a></li>
+                </ul>
+            </div><!-- //.menu -->
+
+            <div class="ltrt_btn">
+                <button class="left"><img src="img/left_btn.png" alt=""></button>
+                <button class="right"><img src="img/right_btn.png" alt=""></button>
+            </div><!-- //.ltrt_btn -->
+
+
+            <ul class="services_icon">
+                <li><a href="#"><img src="img/services_icon1.png" alt=""><span>전자민원</span></a></li>
+                <li><a href="#"><img src="img/services_icon2.png" alt=""><span>안성맞춤아트홀</span></a></li>
+                <li><a href="#"><img src="img/services_icon3.png" alt=""><span>상하수도 요금조회</span></a></li>
+                <li><a href="#"><img src="img/services_icon4.png" alt=""><span>보건소</span></a></li>
+                <li><a href="#"><img src="img/services_icon5.png" alt=""><span>차량등록 사무소</span></a></li>
+                <li><a href="#"><img src="img/services_icon6.png" alt=""><span>폐기물 안내</span></a></li>
+                <li><a href="#"><img src="img/services_icon7.png" alt=""><span>통합예약</span></a></li>
+                <li><a href="#"><img src="img/services_icon8.png" alt=""><span>생활지도</span></a></li>
+            </ul><!-- //.services_icon -->
+        </div><!-- //.container -->
+    </section><!-- //.services -->
+
+    <section class="notice_job">
+        <div class="container">
+            <div class="notice">
+                <h2><b>New</b><br>
+                    안성소식!</h2>
+                <div class="notice_tit">
+                    <span class="on">공지사항</span>
+                    <span>고시/공고</span>
+                    <span>보도자료</span>
+                    <span>입찰</span>
+                    <span>입법예고</span>
+                    <span>+</span>
+                </div><!-- //.notice_tit -->
+                <div class="new_note">
+                    <div class="date">
+                        <em id="year_mon">2024.01</em>
+                        <strong id="now">02</strong>
+                    </div>
+                    <div class="txt">
+                        <h3><b>new </b> 안성시 공립작은도서관 위탁 운영체 모집 재공고</h3>
+                        <p>안성시 작은도서관 운영조례 제9조, 안성시 사무의 민간위탁에 관한 <br>
+                            기본 조례에 의거 안성시 공립 작은도서관 7개관~ㆍㆍㆍ</p>
+                    </div>
+                </div><!-- //.new_note -->
+                <ul class="note">
+                    <li><a href="#">모두의 안녕을 위한 시민 공론장 개최<span>2023.11.28</span></a></li>
+                    <li><a href="#">2023년도 안성시 청소년 상담복지 센터 팀원 채용 공고<span>2023.11.27</span></a></li>
+                    <li><a href="#">[보개] 원데이플러스 오일파스텔 연말특강<span>2023.11.26</span></a></li>
+                </ul><!-- //.note -->
+            </div><!-- .notice -->
+
+            <div class="job">
+                <h2>안성 일자리!</h2>
+                <p>⭐채용정보 알아보기⭐</p>
+                <a href="#"><span>더보기 + </span></a>
+
+                <div class="job_info">
+                    <div class="job1">
+                        <div class="date">
+                            <a href="#">2023.11.28~ <span> 채용시까지</span></a>
+                        </div>
+                        <h3>(주)현장종합관리</h3>
+                        <p>안성 공도 센트럴카운티<br>아파트 미화원 모집</p>
+
+                        <div class="pay_all"><div class="pay">급여</div> <em>월급</em></div><!-- //.pay_all -->
+                        <div class="place_all">
+                        <div class="place">근무지</div> <em>경기 안성시</em></div>
+                    </div><!-- //job1 -->
+                    <div class="job2">
+                        <div class="date">
+                            <a href="#">2023.11.28~ <span>채용시까지</span></a>
+                        </div>
+                        <h3>(주)현장종합관리</h3>
+                        <p>안성 공도 센트럴카운티<br>아파트 미화원 모집</p>
+                        <div class="pay_all">
+                        <div class="pay">급여</div> <em>월급</em>
+                        </div>
+                        <div class="place_all">
+                        <div class="place">근무지</div> <em>경기 안성시</em></div>
+                    </div><!-- //.job2 -->
+                </div><!-- //.job_info -->
+            </div><!-- //.job -->
+        </div><!-- //.container -->
+    </section><!-- //notice_job -->
+
+    <section class="tour">
+        <div class="container">
+            <div class="tour_left">
+                <h2>안성시 구석구석!<br>
+                    문화관광👀
+                </h2>
+                <button type="button">더 알아보기 -&gt;</button>
+                <div class="tourlist">
+                    <div class="tour1">
+                        <h3>안성 8경</h3>
+                        <p>여기서만은 안성에서<br>
+                            꼭 소개시켜드리고 싶었습니다.</p>
+                    </div><!-- //.tour1 -->
+                    <div class="tour2">
+                        <h3>남사당 바우덕이 축제</h3>
+                        <p>조선 최초이자 최후의 여자 꼭두쇠<br>
+                            바우덕이를 기리고남사당 문화를<br>
+                            알리고자 안성시에서 신명나는<br>
+                            축제를 만들었습니다. </p>
+                    </div><!-- //.tour2 -->
+                    <div class="tour3">
+                        <h3>팜랜드</h3>
+                        <p>#안성여행 #안성팜랜드 <br>
+                            #구석구석 #안성가볼만한곳 <br>
+                            #주말여행 #가족여행</p>
+                    </div><!-- //.tour4 -->
+                </div><!-- //.tourlist -->
+            </div><!-- //.tour_left -->
+            <div class="tour_right">
+                <div class="map"></div>
+            </div><!-- //.tour_right -->
+        </div><!-- //.container -->
+    </section>
+
+    <section class="event">
+        <h2>안성 알리미🔔</h2>
+        <div class="container">
+            <img src="img/year.png" alt="">
+            <div class="wrapper">
+                <div class="nav">
+                    <button class="material-icons"> &lt; </button>
+                    <p class="current-date">JANUARY</p>
+                    <button class="material-icons"> &gt; </button>
+                </div> <!-- //.nav -->
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul><!-- //.weeks -->
+                    <ul class="days">
+                        <li class="inactive"></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li class="active">8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul><!-- //.days -->
+                </div><!-- //.calendar -->
+            </div><!-- //.wrapper -->
+
+            <div class="e_right">
+
+                <div class="e_go1">
+                    <div class="tit">전시</div>
+                    <span>2023 안성맞춤박물관 특별전</span>
+                    <b>"내 입에 안성맞춤"</b>
+                    <img src="img/arrow.png" alt="">
+                </div>
+                <div class="e_go2">
+                    <div class="tit">전시</div>
+                    <span>2023 안성 3.1 운동기념관 특별전</span>
+                    <b>'독립운동가 한재호'</b>
+                    <img src="img/arrow.png" alt="">
+                </div>
+                <div class="e_go3">
+                    <div class="tit">전시</div>
+                    <span>2023 안성맞춤박물관 특별전</span>
+                    <b>"내 입에 안성맞춤"</b>
+                    <img src="img/arrow.png" alt="">
+                </div>
+        </div><!-- //.e_right -->
+        </div><!-- //.container -->
+    </section><!-- //.event -->
+
+    <footer>
+        <div class="container">
+            <h1><a href="#"><img src="img/f_logo.png" alt="안성시청"></a></h1>
+            <div class="f_center">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">저작권 정책</a></li>
+                    <li><a href="#">누리집 도우미</a></li>
+                    <li><a href="#">뷰어내려받기</a></li>
+                    <li><a href="#">시청오시는길</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">(우)17586 경기도 안성시 시청길 25(봉산동)</a></li>
+                    <li><a href="#">대표전화 031-678-2114</a></li>
+                    <li><a href="#">팩스 031-678-5889</a></li>
+                </ul>
+                <div class="copy">Copyright © (c) 2016 ANSEONG-SI. All rights Reserved.</div>
+            </div><!-- //.f_center -->
+        </div><!-- //container -->
+    </footer>
+</body>
+
+</html>
